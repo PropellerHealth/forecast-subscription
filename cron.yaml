@@ -1,0 +1,9 @@
+cron:
+- description: daily email job
+  url: /tasks/email
+  schedule: every day 08:00
+  timezone: US/Central
+- description: monday morning mailout
+  url: /tasks/sms
+  schedule: every day 09:00
+  timezone: US/Central
