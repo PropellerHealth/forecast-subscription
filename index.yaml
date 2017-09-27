@@ -1,0 +1,12 @@
+indexes:
+
+- kind: subscriber
+  properties:
+  - name: to
+    direction: asc
+
+- kind: subscriber
+  properties:
+  - name: method
+    name: created
+    direction: asc
