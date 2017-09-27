@@ -8,5 +8,6 @@ indexes:
 - kind: subscriber
   properties:
   - name: method
-    name: created
+    direction: asc
+  - name: created
     direction: asc
