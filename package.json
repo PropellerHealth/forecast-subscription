@@ -15,9 +15,11 @@
     "errorhandler": "^1.4.3",
     "express": "^4.14.0",
     "logme": "^0.4.0",
+    "mailgun-js": "^0.13.1",
     "method-override": "^2.3.6",
     "path": "^0.12.7",
-    "request": "^2.75.0"
+    "request": "^2.75.0",
+    "twilio": "^3.6.7"
   },
   "devDependencies": {},
   "engines": {

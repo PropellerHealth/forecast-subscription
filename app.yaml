@@ -1,5 +1,10 @@
 runtime: nodejs
 env: flex
+env_variables:
+  TWILIO_SID: "fixme"
+  TWILIO_TOKEN: "fixme"
+  MAILGUN_KEY: "fixme"
+  MAILGUN_DOMAIN: "fixme"
 resources:
   cpu: 1
   memory_gb: 0.6
