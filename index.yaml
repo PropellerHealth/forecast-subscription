@@ -4,10 +4,5 @@ indexes:
   properties:
   - name: to
     direction: asc
-
-- kind: subscriber
-  properties:
-  - name: method
-    direction: asc
-  - name: created
+  - name: zip
     direction: asc
