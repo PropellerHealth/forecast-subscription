@@ -1,0 +1,41 @@
+{{> header_html}}
+
+<tbody>
+    <tr>
+        <td class="text-center"><h2>Stay ahead of your asthma with Air by Propeller.</h2></td>
+    </tr>
+
+    <br/>
+
+    <tr>
+        <td><img src="{{IMG_HOST}}/img_location.png" alt="Location"/>&nbsp;location {{zip}}</td>
+    </tr>
+
+    <br/>
+
+    <tr>
+        <td class="text-center">
+            {{#if isForecastPoor}}
+                <img src="{{IMG_HOST}}/img_email_poor.png" alt="Poor Asthma Conditions" />
+            {{else}}
+                <img src="{{IMG_HOST}}/img_email_fair.png" alt="Fair Asthma Conditions" />
+            {{/if}}
+        </td>
+    </tr>
+
+    <br/>
+    <tr>
+        <td class="text-left">Knowing your local asthma conditions can help you stay ahead of possible symptoms and triggers. Air asthma insights are determined by key weather features, such as temperature and humidity, which are always changing and make it difficult to breathe. Remember to call your doctor if you have concerns about your asthma conditions.</td>
+    </tr>
+    <br/>
+    <tr>
+        <td class="text-left">To learn more about Propeller Health and how you can manage your asthma better, visit our page.</td>
+    </tr>
+    <br/>
+    <tr>
+        <td class="text-left">&nbsp;&nbsp;&nbsp;&nbsp;- Propeller</td>
+    </tr>
+
+</tbody>
+
+{{> footer_html}}

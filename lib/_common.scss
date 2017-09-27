@@ -1,0 +1,329 @@
+// Primary Blue: $primary  PMS 298c //  CYMK 65 / 0 / 0 / 0 // RGB 32 / 196 / 244
+$primary: #20c3f3;
+// Green: #78BE20  / PMS 368C // CMYK 65 / 0 / 100 / 0 // RGB 120 / 190 / 32
+$green: #78BE20;
+// Red: #E0004d  / PMS 1925c // CYMK 0 / 97 / 50 / 0 // RGB 224 / 0 / 77
+$red: #E0004d;
+// Purple: #772583  / PMS 2612c // CYMK 67 / 100 / 0 / 5 // RGB 119 / 37 / 131
+$purple: #772583;
+// Gray: #888b8d  // PMS Cool Gray 8c // CYMK 23 / 16 / 13 / 46 // RGB  136 / 139 / 141
+$gray: #888b8d;
+// Black: #000000  / PMS Blackc // CYMK 0 / 0 / 0 /100 // RGB 0 / 0 / 0
+$black: #000000;
+// White: #FFFFFF  // PMS 290c // CYMK 0 / 0 / 0 / 0 // RGB 255 / 255 / 255
+$white: #FFFFFF;
+
+$text-color: #666666;
+$background-gray: #f2f2f2;
+
+/* Force Hotmail to display emails at full width */
+.ExternalClass {
+    display: block !important;
+    width: 100%;
+}
+
+/* Force Hotmail to display normal line spacing */
+.ExternalClass,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass td,
+.ExternalClass div {
+    line-height: 100%;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+}
+
+[style*="Circular-Pro-Book-S"] {
+    font-family: 'Circular-Pro-Book-S', Arial, sans-serif !important
+}
+
+body,
+p,
+td {
+    font-family: Arial, sans-serif, 'Circular-Pro-Book-S';
+    font-size: 14px;
+    color: $text-color;
+    line-height: 1.5em;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 36px;
+    color: $black;
+}
+
+body,
+p {
+    margin-bottom: 0;
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+}
+
+img {
+    outline: none;
+    text-decoration: none;
+    -ms-interpolation-mode: bicubic;
+}
+
+a img {
+    border: none;
+}
+
+table.btn {
+    box-sizing: border-box;
+    mso-table-lspace: 0pt;
+    mso-table-rspace: 0pt;
+    width: 100%;
+    border-collapse: separate;
+    text-align: center;
+
+    & > tr > td {
+        box-sizing: border-box;
+        border-collapse: collapse;
+        padding-bottom: 15px;
+        text-align: center;
+
+        & > table {
+            box-sizing: border-box;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+            width: auto;
+            border-collapse: separate;
+            text-align: center;
+
+            & > tr > td {
+                box-sizing: border-box;
+                border-collapse: collapse;
+                background-color: transaparent;
+                border-radius: 5px;
+                text-align: center;
+            }
+        }
+    }
+
+    a {
+        box-sizing: border-box;
+        border: solid 1px $primary;
+        text-decoration: none;
+        background-color: $white;
+        border-radius: 5px;
+        cursor: pointer;
+        display: inline-block;
+        color: $primary;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 0;
+        padding: 18px 22px;
+        min-width: 250px;
+        max-width: 100%;
+        display: block;
+        line-height: 0;
+        text-align: center;
+    }
+
+    &.btn-secondary a{
+        box-sizing: border-box;
+		border: solid 1px $white;
+		text-decoration: none;
+		background-color: transparent;
+		border-radius: 5px;
+		cursor: pointer;
+		display: inline-block;
+		color: $primary;
+		font-size: 16px;
+		font-weight: bold;
+        margin: 0;
+        padding: 18px 22px;
+        min-width: 250px;
+        max-width: 100%;
+        display: block;
+        line-height: 0;
+        text-align: center;
+    }
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a,
+a:link {
+    color: $primary;
+    text-decoration: underline;
+}
+
+table td {
+    border-collapse: collapse;
+}
+
+td {
+    vertical-align: top;
+    text-align: center;
+}
+
+.wrap {
+    width: 600px;
+}
+
+.wrap-cell {
+}
+
+.header-cell,
+.body-cell,
+.footer-cell {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.header-cell {
+    background-color: $primary;
+    font-size: 24px;
+    color: $primary;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.body-cell {
+    background-color: $white;
+    padding-top: 30px;
+    padding-bottom: 34px;
+}
+
+.footer-cell {
+    background-color: $primary;
+    text-align: left;
+    font-size: 12px;
+    color: $text-color;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    p {
+        color: $white;
+        font-size: 12px;
+    }
+
+    .unsubscribe-link {
+        color: $white;
+    }
+}
+
+.disclaimer-cell {
+    background-color: $white;
+    text-align: left;
+    font-size: 12px;
+    color: $text-color;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    p {
+        color: $text-color;
+        font-size: 12px;
+    }
+}
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.data-heading {
+    text-align: right;
+    padding: 10px;
+    background-color: $white;
+    font-weight: bold;
+}
+
+.data-value {
+    text-align: left;
+    padding: 10px;
+    background-color: $white;
+}
+
+.force-full-width {
+    width: 100% !important;
+}
+
+.gmail-font-size {
+    display:none;
+    white-space:nowrap;
+    font:15px courier;
+    line-height:0;
+}
+
+.black-text {
+    color: $black;
+}
+
+.white-text {
+    color: $white;
+}
+
+.background-primary {
+    background-color: $primary;
+}
+
+.small {
+    font-size: 0.8em;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+table.social td {
+    padding: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    body[class*="background"],
+    table[class*="background"],
+    td[class*="background"] {
+        background: #eeeeee !important;
+    }
+
+    table[class="card"] {
+        width: auto !important;
+    }
+
+    td[class="data-heading"],
+    td[class="data-value"] {
+        display: block !important;
+    }
+
+    td[class="data-heading"] {
+        text-align: left !important;
+        padding: 10px 10px 0;
+    }
+
+    table[class="wrap"] {
+        width: 100% !important;
+    }
+
+    td[class="wrap-cell"] {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+}
