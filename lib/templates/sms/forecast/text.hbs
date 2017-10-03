@@ -1,5 +1,7 @@
 {{#if isForecastPoor}}
 Asthma conditions for {{zip}} are poor. People with asthma may experience asthma symptoms today so be sure to keep your rescue inhaler handy
-{{else}}
+{{else if isForecastFair}}
 Asthma conditions for {{zip}} are fair. Sensitive asthma sufferers may experience asthma symptoms today and should keep your rescue inhaler handy
+{{else if isForecastGood}}
+Asthma conditions for {{zip}} are good. Your environment isn’t likely to cause asthma symptoms today, but be sure to keep your rescue inhaler handy just in case!
 {{/if}}
