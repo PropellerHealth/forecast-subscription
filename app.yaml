@@ -3,15 +3,16 @@ env: flex
 env_variables:
   TWILIO_SID: "fixme"
   TWILIO_TOKEN: "fixme"
+  TWILIO_NUMBER: "fixme"
   MAILGUN_KEY: "fixme"
   MAILGUN_DOMAIN: "fixme"
 resources:
   cpu: 1
-  memory_gb: 0.6
+  memory_gb: 1.0
   disk_size_gb: 10
 health_check:
   enable_health_check: True
   check_interval_sec: 5
-  timeout_sec: 4
+  timeout_sec: 5
   unhealthy_threshold: 2
   healthy_threshold: 2

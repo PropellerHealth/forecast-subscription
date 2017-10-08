@@ -1,6 +1,6 @@
 {
   "name": "forecast-subscription",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "author": "Solomon Blaz",
   "description": "Signup to receive notifications for Propeller's asthma forecast via SMS and email",
   "keywords": [
