@@ -41,6 +41,7 @@
   },
   "scripts": {
     "start": "TZ=UTC node lib/app.js",
-    "watch": "TZ=UTC nodemon lib/app.js"
+    "watch": "TZ=UTC nodemon lib/app.js",
+    "send": "node bin/send.js"
   }
 }

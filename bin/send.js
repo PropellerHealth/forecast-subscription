@@ -34,13 +34,15 @@ async.waterfall([
         }
         
         let method = subscriber.to.indexOf('@') >= 0 ? email : sms;
-        method.sendForecast(subscriber.to, forecast.properties.code, subscriber.zip, next);
+        method.sendForecast(subscriber.to, forecast.properties.code, subscriber.zip, function(err){
+            next(err, forecast);
+        });
     }
-],(err) =>{
+],(err, forecast) =>{
     if (err) {
-        console.error('unable to send forecast for ' + subscriber.zip + ' to ' + subscriber.to);
+        console.error('unable to send '+forecast.properties.code+' forecast for ' + subscriber.zip + ' to ' + subscriber.to);
         console.error(err);
     } else {
-        console.log('sent forecast for ' + subscriber.zip + ' to ' + subscriber.to);
+        console.log('sent '+forecast.properties.code+' forecast for ' + subscriber.zip + ' to ' + subscriber.to);
     }
 });

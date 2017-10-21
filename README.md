@@ -19,8 +19,18 @@ The SMS delivery component is currently built using Twilio.
 # Google App Engine
 The project is designed to be deployed on Google App Engine. It would be easy enough to port this over to a different cloud provider. The current implementation is tied to GAE primarily in two ways,
 
- 1. Through the datastore implementation located in lib/models/subsriber.js and index.yaml
+ 1. Through the datastore implementation located in lib/models/subscriber.js and index.yaml
  1. Through the CRON implementation (a GAE service) located in cron.yaml
 
 ## Configuration
-In order for the email and SMS services to operate, you will need to setup credentials for both Mailgun and Twilio. These are defined as `env_variables` in **app.yaml**. The app won't start without these define. 
+In order for the email and SMS services to operate, you will need to setup credentials for both Mailgun and Twilio. These are defined as `env_variables` in **app.yaml**. The app won't start without these defined. 
+
+# Sending a test message
+To send a test message to a subscriber about a specific zip, set the environment variables listed in  **app.yaml** `env_variables` and execute:
+```
+npm run send -- --to foo.bar@example.com --zip 53704
+```
+or
+```
+npm run send -- --to 5555555555 --zip 53704
+```
