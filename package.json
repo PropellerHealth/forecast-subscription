@@ -20,7 +20,7 @@
     "handlebars": "4.0.5",
     "joi": "11.1.1",
     "mailgun-js": "0.22.0",
-    "method-override": "2.3.6",
+    "method-override": "2.3.10",
     "node-sass": "4.13.1",
     "path": "0.12.7",
     "request": "2.75.0",
