@@ -10,9 +10,13 @@ resources:
   cpu: 1
   memory_gb: 1.0
   disk_size_gb: 10
-health_check:
-  enable_health_check: True
+liveness_check:
+  path: "/live"
   check_interval_sec: 5
   timeout_sec: 5
-  unhealthy_threshold: 2
-  healthy_threshold: 2
+  success_threshold: 2
+readiness_check:
+  path: "/ready"
+  check_interval_sec: 5
+  timeout_sec: 5
+  failure_threshold: 2
